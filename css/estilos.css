@@ -29,28 +29,18 @@ footer{
 }
 footer p{
     margin-left: 9px;
-    text-align: center;
 }
 
 
 /*********************SAMARTPHONE******************************/
-.logoInicio{
+.navbar-brand img{
     width: 30%;
     height: 40%;
     position: relative;
-    left: 20em;
-    
+    left: 17em;
+    top: -100%;
 }
 
-.cabecera{
-    background-image: url(../paginas/imagenes/baner_buda.jpeg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    font-family: "Bebas Neue", cursive;
-    font-size: medium;
-    color: white;
-    
-}
 ul{
     list-style-type: none;
 }
@@ -86,10 +76,12 @@ li:hover {
     position: relative;
     left: 11%;
     top: 2px;
-    font-size: medium;
+    font-size: large;
 }
 i{
     padding-right: 4px;
+    color: brown;
+   
 }
 a .pieDeimagen{
     display: flex;
@@ -105,21 +97,21 @@ a .pieDeimagen{
 
 /*Galeria pagina principla*/
 .menuPrincipal{
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;
     flex-direction: column;
-    justify-items: center;
+    justify-items: center; */
+   
     
     
 } 
  div.galeria {
-    margin: 30px 25px 15px;
+    margin: 10px 15px 10px;
     box-shadow: 0 4px 8px rgb(24, 22, 22), 12px 30px 40px 0 rgba(0, 0, 0, 0.19);
-    height: 400px;
-    width: 250px;
+    height: 300px;
+    width: 150px;
     position: relative;
    
-    left: 4em;
   }
   div.galeria img {
     width: 250px;
@@ -130,9 +122,8 @@ a .pieDeimagen{
     transform: rotate(-8deg);
   }
 /*ESTRUCTURA CABECERAS OTRAS PAGINAS*/
-.cabecera2{
+ .cabecera2{
     height: 25vh;
-    width: 100vh;
     display: flex;
     flex-direction:row;
     justify-content: center;
@@ -144,19 +135,19 @@ a .pieDeimagen{
     font-size: large;
     color: white;
     
-}
+} 
 
 .iconos2{
     position: relative;
-    left: 100px;  
-    top: 95px;
+    left: 10%;  
+    top: 100px;
     font-size: large;
 }
 
  
 a .logo{
     position: relative;
-    left: 39%;
+    left: 80%;
     top: -15vh;
     width: 19%;
     height: 35%;
@@ -227,13 +218,9 @@ header{
 }
 main{
     grid-area: contenido;
-    
 }
 footer{
     grid-area: pie;
-    text-align: center;
-    
-    
    
 }
 /*ESTRUCTURA DE GALERIA SHOP FREE SOUL*/
@@ -336,7 +323,7 @@ aside{
     "pie . ."
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 16.5% 0.3fr 40px;
+    grid-template-rows: 10% 0.3fr 40px;
     grid-row-gap: 20px;
     
 } 
@@ -376,6 +363,7 @@ article div{
 
 footer p{
     margin-left: 9px;
+    text-align: center;
 } 
 
 /*ESTRUCTURA GRID ABOUT US*/
@@ -469,22 +457,34 @@ section p{
         background-color: violet;
     }
     /*CLASES*/
-    .cabecera{
-        background-image: url(../paginas/imagenes/baner_buda.jpeg);
+    /* .cabecera{
+        
         background-repeat: no-repeat;
         background-size: cover;
         font-family: "Bebas Neue", cursive;
         font-size: xx-large;
         color: white;
     }
-    
-    .logoInicio{
+     */
+
+     .img-fluid{
+         width: 100%;
+     }
+    .navbar-brand img{
         width: 30%;
         height: 50%;
         position: relative;
-        left: 750px;
-        top: 35px;
+        left: 70%;
+        top: -800px;
     }
+    
+
+    .dropdown-menu{
+        color: black;
+        background-color: rgb(141, 148, 141);
+    }
+
+    
     
     .menuInicio{
         display: flex;
@@ -510,15 +510,18 @@ section p{
         top: 5px;
         font-size: x-large;
     }
-    .iconos2{
+    /* .iconos2{
         position: relative;
         left: 60%;  
         top: 100px;
         font-size: large;
-    }
+    } */
     
-    i{
+    a i{
         padding-right: 10px;
+        font-size: x-large;
+        margin-top: 70% ;
+        margin-left: 400%;
     }
     
     
@@ -538,13 +541,13 @@ section p{
     /*clases de shop*/
     .cabecera2{
         height: 25vh;
-        width: 100%;
+        /* width: 200vh; */
         display: flex;
         flex-direction:row;
         justify-content: center;
         background-image: url("../paginas/imagenes/baner_generico.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size:cover;
         font-family: "Bebas Neue", cursive;
         font-size: x-large;
         color: white;
@@ -552,32 +555,42 @@ section p{
     
     a .logo{
         position: relative;
-        left: 39%;
-        top: -17vh;
+        left: 40%;
+        top: -12vh;
         width: 15%;
         height: 30%;
     }
     
+
+    
     
     /*Galeria pagina principla*/
+    
+    .main{
+        height: 100%;
+    }
+}
+
     .menuPrincipal{
         display: flex;
         flex-flow: row wrap;
         justify-items: center;
+        margin: 15% 0 30% 0;
+        
         
         
     } 
      div.galeria {
-        margin: 90px 25px 15px;
+        margin: 90px 25px 40px;
         box-shadow: 0 4px 8px rgb(24, 22, 22), 12px 30px 40px 0 rgba(0, 0, 0, 0.19);
-        height: 400px;
-        width: 250px;
+        height: 300px;
+        width: 150px;
         position: relative;
-        left: 3em;
+        left: 11em;
       }
       div.galeria img {
-        width: 250px;
-        height: 300px;
+        width: 150px;
+        height: 200px;
       }
       div.galeria:hover {
         border: 1px solid lightgreen;
@@ -671,7 +684,7 @@ section p{
         margin: 0px 20px 10px;
         box-shadow: 0 10px 8px gray, 0 6px 20px 30px rgba(0, 0, 0, 0.19);
         left: 75px;
-        width: 300px;
+        width: 275px;
         position: relative;
         height: 320px;
         
@@ -680,7 +693,7 @@ section p{
         margin: 200px 20px 10px ;
         box-shadow: 0 10px 8px gray, 0 6px 20px 30px rgba(0, 0, 0, 0.19);
         left: 75px;
-        width: 300px;
+        width: 275px;
         position: relative;
         height: 320px;
         
@@ -688,8 +701,8 @@ section p{
       }
       div.galeriaShopTapp img {
         width: 280px;
-        height: 310px;
-        padding: 2px 6px 90px 6px;
+        height: 330px;
+        padding: 2px 6px 90px 2px;
         position: relative;
         right: 90px;
         
@@ -697,8 +710,8 @@ section p{
       }
       div.galeriaShopTapp2 img {
         width: 280px;
-        height: 310px;
-        padding: 2px 6px 90px 6px;
+        height: 330px;
+        padding: 2px 6px 90px 2px;
         position: relative;
         right: 90px;
         
@@ -786,4 +799,7 @@ section p{
         text-indent: 15px;
         }
    
+    footer{
+
     }
+}
